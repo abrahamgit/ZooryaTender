@@ -6,8 +6,7 @@ import React, {Component, PropTypes} from 'react';
 import {View, ScrollView} from 'react-native';
 
 import {Theme, NavigationPage, NavigationBar, ListRow, Label, Input, Button} from 'teaset';
-import TenderCatagories from './TenderCatagories';
-import Register from './Register';
+import Home from './Home';
 
 // import ButtonExample from './ButtonExample';
 // import CheckboxExample from './CheckboxExample';
@@ -35,7 +34,7 @@ import Register from './Register';
 // import DrawerExample from './DrawerExample';
 // import ModalIndicatorExample from './ModalIndicatorExample';
 
-export default class Home extends NavigationPage {
+export default class Register extends NavigationPage {
 
   static defaultProps = {
     ...NavigationPage.defaultProps,
@@ -54,17 +53,17 @@ export default class Home extends NavigationPage {
   renderPage() {
     return (
       <ScrollView style={{flex: 1}}>
-        <ListRow  detail={<Label style={{color: '#0aadff', fontSize: 108}} text='Zoorya' />}/>
-        <ListRow  detail={<Label style={{color: '#8a6d3b', fontSize: 25}} text='Tender' />} />
+        <ListRow  detail={<Label style={{color: '#0aadff', fontSize: 50}} text='Zoorya' />} topSeparator='full' bottomSeparator='full' />
+        <ListRow  detail={<Label style={{color: '#8a6d3b', fontSize: 20}} text='Tender' />} topSeparator='full' bottomSeparator='full' />
+        <View style={{height: 20}} />
 
-        <ListRow  detail={<Input style={{width: 325}} size='lg' placeholder="Enter Your Email" value={this.state.Email} onChangeText={text => this.setState({email: text})} />} bottomSeparator='full' />
-        <ListRow  detail={<Input style={{width: 325}} size='lg' placeholder="Enter Your Password" value={this.state.Password} onChangeText={text => this.setState({password: text})} secureTextEntry={true} />} bottomSeparator='full' />
-        <ListRow  detail={<Button style={{width: 325}} title='Login' onPress={() => this.navigator.push({view: <TenderCatagories />})} />} />
-        
-        <ListRow  detail={<Label style={{color: '#8a6d3b', fontSize: 15}} text='Donot have an account' onPress={() => this.navigator.push({view: <Register/>})}/>} />
-        <View style={{height: 20}} />   
-        <ListRow  detail={<Button style={{width: 325}} title='Login with Facebook' type='primary' />} />
-         <ListRow  detail={<Button style={{width: 325}} title='Login with Google' type='danger' />} />
+         <ListRow  detail={<Input style={{width: 325}} size='lg' placeholder="Enter Your Full Name"  value={this.state.fullname} onChangeText={text => this.setState({fullname: text})} />} bottomSeparator='full' />
+        <ListRow  detail={<Input style={{width: 325}} size='lg'  placeholder="Enter Your Email" value={this.state.Email} onChangeText={text => this.setState({email: text})} />} bottomSeparator='full' />
+        <ListRow  detail={<Input style={{width: 325}} size='lg'  placeholder="Enter Password" value={this.state.Password} onChangeText={text => this.setState({password: text})}  secureTextEntry={true}/>} bottomSeparator='full' />
+        <ListRow  detail={<Input style={{width: 325}} size='lg'  placeholder="ReEnter Your Password" value={this.state.reenterpassword} onChangeText={text => this.setState({reenterpassword: text})} secureTextEntry={true}/>} bottomSeparator='full' />
+        <ListRow  detail={<Button style={{width: 325}} title='Sign-Up' onPress={() => this.navigator.push({view: <Home />})} />} />
+         <View style={{height: 20}} /> 
+         
     
         {/*<ListRow title='Theme' detail='主题' onPress={() => this.navigator.push({view: <ThemeExample />})} topSeparator='full' />
         <ListRow title='Label' detail='标签' onPress={() => this.navigator.push({view: <LabelExample />})} />
