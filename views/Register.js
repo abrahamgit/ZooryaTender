@@ -53,7 +53,7 @@ export default class Register extends NavigationPage {
   renderPage() {
     return (
       <ScrollView style={{flex: 1}}>
-        <ListRow  detail={<Label style={{color: '#0aadff', fontSize: 50}} text='Zoorya' />} topSeparator='full' bottomSeparator='full' />
+        <ListRow  detail={<Label style={{ flex: 1, alignItems: 'center', justifyContent: 'center', color: '#0aadff', fontSize: 50 }} text='Zoorya' />} topSeparator='full' bottomSeparator='full' />
         <ListRow  detail={<Label style={{color: '#8a6d3b', fontSize: 20}} text='Tender' />} topSeparator='full' bottomSeparator='full' />
         <View style={{height: 20}} />
 

@@ -45,8 +45,8 @@ export default class Home extends NavigationPage {
   constructor(props){
       super(props);
       Object.assign(this.state,{
-          email:'Email address',
-          password:'Password',
+          email:'',
+          password:'',
 
       })
   }
@@ -58,8 +58,8 @@ export default class Home extends NavigationPage {
         <ListRow  detail={<Label style={{color: '#0aadff', fontSize: 108}} text='Zoorya' />}/>
         <ListRow  detail={<Label style={{color: '#8a6d3b', fontSize: 25}} text='Tender' />} />
 
-        <ListRow  detail={<Input style={{width: 325}} size='lg' placeholder="Enter Your Email" value={this.state.Email} onChangeText={text => this.setState({email: text})} />} bottomSeparator='full' />
-        <ListRow  detail={<Input style={{width: 325}} size='lg' placeholder="Enter Your Password" value={this.state.Password} onChangeText={text => this.setState({password: text})} secureTextEntry={true} />} bottomSeparator='full' />
+        <ListRow  detail={<Input style={{width: 325}} size='lg' placeholder="Enter Your Email" value={this.state.email} onChangeText={text => this.setState({email: text})} />} bottomSeparator='full' />
+        <ListRow  detail={<Input style={{width: 325}} size='lg' placeholder="Enter Your Password" value={this.state.password} onChangeText={text => this.setState({password: text})} secureTextEntry={true} />} bottomSeparator='full' />
         <ListRow  detail={<Button style={{width: 325}} title='Login' onPress={() => this.navigator.push({view: <TenderCatagories />})} />} />
         
         <ListRow  detail={<Label style={{color: '#8a6d3b', fontSize: 15}} text='Donot have an account' onPress={() => this.navigator.push({view: <Register/>})}/>} />
