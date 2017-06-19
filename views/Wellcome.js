@@ -1,10 +1,10 @@
 'use strict';
 
 import React, {Component, PropTypes} from 'react';
-import {StyleSheet, View, Image, ScrollView, Dimensions ,Switch} from 'react-native';
-
+import {StyleSheet, View, Image, ScrollView, Dimensions ,Switch } from 'react-native';
 import {Theme,Carousel, NavigationPage, ListRow, SegmentedView, Label, PullPicker} from 'teaset';
 import TenderDetail from './TenderDetail';
+import Icon from 'react-native-vector-icons/FontAwesome';
 export default class SegmentedViewExample extends NavigationPage {
 
   static defaultProps = {
@@ -194,10 +194,11 @@ selectControl() {
           onPress={() => this.navigator.push({view: <TenderDetail />})}
           title='Swipe able'
           detail={
-          'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
+          'React Native  enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            
+            <ListRow.SwipeActionButton title='Follow'  style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,        
           ]}

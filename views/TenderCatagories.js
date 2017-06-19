@@ -2,7 +2,6 @@
 
 import React, {Component, PropTypes} from 'react';
 import {View, ScrollView, Image} from 'react-native';
-
 import {NavigationPage, ListRow, Checkbox, Label, Button} from 'teaset';
 import Wellcome from './Wellcome';
 export default class TenderCatagories extends NavigationPage {
@@ -85,14 +84,6 @@ export default class TenderCatagories extends NavigationPage {
             />
         } bottomSeparator='full' />
 
-
-
-
-
-
-
-
-
         <View style={{height: 20}} />
         <ListRow title='Empty title' detail={
           <Checkbox
@@ -121,7 +112,6 @@ export default class TenderCatagories extends NavigationPage {
         } topSeparator='full' bottomSeparator='full' />
 
         <ListRow detail={<Button style={{width: 330}} title='Get Started' type='primary' onPress={() => this.navigator.push({view: <Wellcome />})} />} />
-
 
 
       </ScrollView>
