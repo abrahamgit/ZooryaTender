@@ -3,7 +3,7 @@
 'use strict';
 
 import React, {Component, PropTypes} from 'react';
-import {View, ScrollView} from 'react-native';
+import {View, ScrollView , Text} from 'react-native';
 
 import {Theme, NavigationPage, NavigationBar, ListRow, Label, Input, Button} from 'teaset';
 import Home from './Home';
@@ -53,8 +53,8 @@ export default class Register extends NavigationPage {
   renderPage() {
     return (
       <ScrollView style={{flex: 1}}>
-        <ListRow  detail={<Label style={{color: '#0aadff', fontSize: 50}} text='Zoorya' />} topSeparator='full' bottomSeparator='full' />
-        <ListRow  detail={<Label style={{color: '#8a6d3b', fontSize: 20}} text='Tender' />} topSeparator='full' bottomSeparator='full' />
+        <ListRow  detail={<Label style={{color: '#0aadff', fontSize: 50,textAlignVertical: 'center'}} text='Zoorya' />} topSeparator='full' bottomSeparator='full' />
+        <ListRow  detail={<Label style={{color: '#8a6d3b', fontSize: 20,justifyContent:'center'}} text='Tender' />} topSeparator='full' bottomSeparator='full' />
         <View style={{height: 20}} />
 
          <ListRow  detail={<Input style={{width: 325}} size='lg' placeholder="Enter Your Full Name"  value={this.state.fullname} onChangeText={text => this.setState({fullname: text})} />} bottomSeparator='full' />
