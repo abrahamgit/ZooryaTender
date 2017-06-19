@@ -53,10 +53,8 @@ export default class Home extends NavigationPage {
   renderPage() {
     return (
       <ScrollView style={{flex: 1}}>
-        <ListRow  detail={<Label style={{color: '#0aadff', fontSize: 108}} text='Zoorya' />} topSeparator='full' bottomSeparator='full' />
+        <ListRow  detail={<Label style={{color: '#0aadff', fontSize: 108}} text='Zoorya'  />   } topSeparator='full' bottomSeparator='full' />
         <ListRow  detail={<Label style={{color: '#8a6d3b', fontSize: 25}} text='Tender' />} topSeparator='full' bottomSeparator='full' />
-        <View style={{height: 20}} />
-
         <ListRow  detail={<Input style={{width: 325}} size='lg' value={this.state.email} onChangeText={text => this.setState({email: text})} />} bottomSeparator='full' />
         <ListRow  detail={<Input style={{width: 325}} size='lg' value={this.state.password} onChangeText={text => this.setState({password: text})} />} bottomSeparator='full' />
         <ListRow  detail={<Button style={{width: 325}} title='Login' onPress={() => this.navigator.push({view: <TenderCatagories />})} />} />
