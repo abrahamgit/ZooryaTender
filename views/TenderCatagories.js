@@ -9,7 +9,7 @@ export default class TenderCatagories extends NavigationPage {
 
   static defaultProps = {
     ...NavigationPage.defaultProps,
-    title: 'TenderCatagories',
+    title: 'Tenders Catagories',
     showBackButton: true,
   };
 
@@ -120,7 +120,7 @@ export default class TenderCatagories extends NavigationPage {
             />
         } topSeparator='full' bottomSeparator='full' />
 
-        <ListRow detail={<Button style={{width: 330}} title='Done' type='primary' onPress={() => this.navigator.push({view: <Wellcome />})} />} />
+        <ListRow detail={<Button style={{width: 330}} title='Get Started' type='primary' onPress={() => this.navigator.push({view: <Wellcome />})} />} />
 
 
 

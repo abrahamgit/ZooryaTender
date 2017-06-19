@@ -11,7 +11,7 @@ export default class TenderDetail extends NavigationPage {
 
   static defaultProps = {
     ...NavigationPage.defaultProps,
-    title: ' ListRow',
+    title: 'Details',
     showBackButton: true,
   };
 
@@ -23,30 +23,38 @@ export default class TenderDetail extends NavigationPage {
     return (
       <ScrollView style={{flex: 1}}>
         <View style={{height: 20}} />
-        <ListRow title='Title' detail='Detail' topSeparator='full' />
-        <ListRow title={<Label style={{fontSize: 18, color: '#31708f'}} text='Custom title' />} />
-        <ListRow title='Custom detail' detail={
+        <ListRow title={<Label style={{fontSize: 18, color: '#31708f'}} text='Tender title' />} />
+        <ListRow title='Posted on' detail={
           <View style={{backgroundColor: '#5bc0de', width: 60, height: 24, borderRadius: 4}} />
         } />
-        <ListRow title='Long detail' detail={
-          'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
-        } />
-        <ListRow title='Title place top' detail={
-          'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
-        } titlePlace='top' />
-        <ListRow title='Icon' icon={require('../icons/config.png')} />
-        <ListRow title='Accessory indicator' accessory='indicator' />
-        <ListRow title='Custom accessory' accessory={<Image source={require('../icons/location.png')} />} />
-        <ListRow title='Press able' onPress={() => alert('Press!')} />
         <ListRow
-          title='Swipe able'
-          detail='Swipe to show action buttons'
-          swipeActions={[
-            <ListRow.SwipeActionButton title='Cancel' />,
-            <ListRow.SwipeActionButton title='Remove' type='danger' onPress={() => alert('Remove')}/>,          
-          ]}
+          title='Posted on'
+          detail='12/04/09'
           bottomSeparator='full'
           />
+          <ListRow
+          title='Bid Opening'
+          detail='27/04/09'
+          bottomSeparator='full'
+          />
+
+          <ListRow
+          title='Company'
+          detail='Company name'
+          bottomSeparator='full'
+          />
+
+          <ListRow
+          title='Catagory'
+          detail='Catagory name'
+          bottomSeparator='full'
+          />
+
+          <ListRow title='Detail Note' detail={
+          'bla bla bla React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React. enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript'
+        } titlePlace='top' />
+
+        
       </ScrollView>
     );
   }
