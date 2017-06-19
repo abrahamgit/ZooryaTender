@@ -54,6 +54,7 @@ export default class Home extends NavigationPage {
   renderPage() {
     return (
       <ScrollView style={{flex: 1}}>
+
         <ListRow  detail={<Label style={{color: '#0aadff', fontSize: 108}} text='Zoorya' />}/>
         <ListRow  detail={<Label style={{color: '#8a6d3b', fontSize: 25}} text='Tender' />} />
 
