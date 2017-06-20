@@ -65,11 +65,11 @@ export default class Home extends NavigationPage {
         
         
 
-        <ListRow  detail={<Input style={{width: 325 ,borderWidth:1,borderColor:'#595959'}} size='lg'  placeholder="Enter Your Email" value={this.state.email} onChangeText={text => this.setState({email: text})} />}/>
-        <ListRow  detail={<Input style={{width: 325,borderWidth:1,borderColor:'#595959'}} size='lg' placeholder="Enter Your Password" value={this.state.password} onChangeText={text => this.setState({password: text})} secureTextEntry={true} />} bottomSeparator='full' />
+        <ListRow  detail={<Input style={{width: 325 }} size='lg'  placeholder="Enter Your Email" value={this.state.email} onChangeText={text => this.setState({email: text})} />}/>
+        <ListRow  detail={<Input style={{width: 325 }} size='lg' placeholder="Enter Your Password" value={this.state.password} onChangeText={text => this.setState({password: text})} secureTextEntry={true} />} bottomSeparator='full' />
         <ListRow  detail={<Button style={{width: 325 ,borderWidth:2}} title='Login' onPress={() => this.navigator.push({view: <TenderCatagories />})} />} />
         
-        <ListRow  detail={<Label style={{color: '#0aadff', fontSize: 15, display:'flex', alignItems:'center'}} text='Donot have an account' onPress={() => this.navigator.push({view: <Register/>})}/>} />
+        <ListRow  detail={<Label style={{color: '#0aadff', fontSize: 15, display:'flex', justifyContent:'center'}} text='Donot have an account' onPress={() => this.navigator.push({view: <Register/>})}/>} />
         <View style={{height: 20}} />   
         <ListRow  detail={<Icon.Button name="facebook" backgroundColor="#3b5998" style={{width: 325,justifyContent:'center'}}> 
         <Text style={{fontFamily: 'Arial', fontSize: 15 , color:'#ffffff',textAlign:'center',}}>Login with Facebook</Text>

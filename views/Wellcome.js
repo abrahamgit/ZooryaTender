@@ -96,6 +96,7 @@ selectControl() {
   renderPage() {
     let {width} = this.state;
     let {custom} = this.state;
+    // const myIcon = (<Icon name="rocket" size={30} color="#900" />)
     return (
 
       // The first segmentedView
@@ -131,7 +132,13 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+
+            <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}>
+              <Label> <Icon name="rocket" size={30} color="#900" />  </Label>
+             </ListRow.SwipeActionButton> ,
+            
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}}/> ,
+            <Icon name="rocket" size={30} color="#900" />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,            
           ]}
@@ -145,7 +152,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-           <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+           <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,       
           ]}
@@ -160,7 +167,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,      
           ]}
@@ -175,7 +182,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,         
           ]}
@@ -199,7 +206,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,        
           ]}
@@ -214,7 +221,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,        
           ]}
@@ -229,7 +236,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,         
           ]}
@@ -244,7 +251,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,         
           ]}
@@ -259,7 +266,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,         
           ]}
@@ -274,7 +281,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,           
           ]}
@@ -289,7 +296,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-           <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+           <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,        
           ]}
@@ -309,7 +316,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,       
           ]}
@@ -324,7 +331,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,          
           ]}
@@ -339,7 +346,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,       
           ]}
@@ -354,7 +361,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-           <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+           <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,          
           ]}
@@ -370,7 +377,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,           
           ]}
@@ -385,7 +392,7 @@ selectControl() {
           'React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.'
         } titlePlace='top'
           swipeActions={[
-            <ListRow.SwipeActionButton title='Follow' style={{backgroundColor: '#ffd700'}} />,
+            <ListRow.SwipeActionButton title='Favorite' style={{backgroundColor: '#ffd700'}} />,
             <ListRow.SwipeActionButton title='Alert' style={{backgroundColor: '#ef3340'}}/>,
             <ListRow.SwipeActionButton title='Share' style={{backgroundColor: '#0085ca'}} onPress={() => alert('Remove')}/>,         
           ]}
