@@ -2,7 +2,7 @@
 
 import React, {Component, PropTypes} from 'react';
 import {StyleSheet, View, Image, ScrollView, Dimensions ,Switch } from 'react-native';
-import {Theme,Carousel, NavigationPage, ListRow, SegmentedView, Label, PullPicker} from 'teaset';
+import {Theme,Carousel, NavigationPage, ListRow, SegmentedView, Label, PullPicker,SearchInput} from 'teaset';
 import TenderDetail from './TenderDetail';
 import Icon from 'react-native-vector-icons/FontAwesome';
 export default class SegmentedViewExample extends NavigationPage {
@@ -187,7 +187,16 @@ selectControl() {
           <SegmentedView.Sheet title={this.renderTitle(1)}>
             <View style={{flex: 1 }}>
                     <ScrollView style={{flex: 1}}>
-        <View style={{height: 20}} />
+         <SearchInput
+            style={{width, height: 40, backgroundColor: '#rgba(238, 169, 91, 0.1)', borderColor: '#8a6d3b'}}
+            inputStyle={{color: '#8a6d3b', fontSize: 18}}
+            iconSize={15}
+            value={this.state.valueCustom}
+            placeholder='Search'
+            placeholderTextColor='#aaa'
+            onChangeText={text => this.setState({valueCustom: text})}
+            />
+       
        
       
         <ListRow
