@@ -5,6 +5,8 @@ import {StyleSheet, View, Image, ScrollView, Dimensions ,Switch} from 'react-nat
 
 import {Theme,Carousel, NavigationPage, ListRow, SegmentedView, Label, PullPicker} from 'teaset';
 import TenderDetail from './TenderDetail';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 export default class SegmentedViewExample extends NavigationPage {
 
   static defaultProps = {
