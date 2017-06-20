@@ -1,10 +1,9 @@
-// ListRowExample.js
+// TenderDetail.js
 
 'use strict';
 
 import React, {Component, PropTypes} from 'react';
 import {View, ScrollView, Image, Text} from 'react-native';
-
 import {NavigationPage, ListRow, Label} from 'teaset';
 
 export default class TenderDetail extends NavigationPage {
@@ -53,7 +52,6 @@ export default class TenderDetail extends NavigationPage {
           <ListRow title='Detail Note' detail={
           'bla bla bla React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React. enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript'
         } titlePlace='top' />
-
         
       </ScrollView>
     );
