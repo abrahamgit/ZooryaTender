@@ -37,7 +37,46 @@ export default class TenderCatagories extends NavigationPage {
             checked={this.state.checkedSM}
             onChange={value => this.setState({checkedSM: value})}
             />
-        } bottomSeparator='full' />
+        } bottomSeparator='full'
+          >
+          <ListRow  style={{ paddingLeft:55}}title='Catagorie title' detail={
+          <Checkbox
+            title=''
+            size='lg'
+            checked={this.state.checkedSM}
+            onChange={value => this.setState({checkedSM: value})}
+            />
+        } bottomSeparator='full'
+          />
+          <ListRow style={{ paddingLeft:55}} title='Catagorie title' detail={
+          <Checkbox
+            title=''
+            size='lg'
+            checked={this.state.checkedSM}
+            onChange={value => this.setState({checkedSM: value})}
+            />
+        } bottomSeparator='full'
+          />
+          <ListRow style={{ paddingLeft:55}} title='Catagorie title' detail={
+          <Checkbox
+            title=''
+            size='lg'
+            checked={this.state.checkedSM}
+            onChange={value => this.setState({checkedSM: value})}
+            />
+        } bottomSeparator='full'
+          />
+          <ListRow style={{ paddingLeft:55}} title='Catagorie title' detail={
+          <Checkbox
+            title=''
+            size='lg'
+            checked={this.state.checkedSM}
+            onChange={value => this.setState({checkedSM: value})}
+            />
+        } bottomSeparator='full'
+          />
+
+          </ListRow>
 
          <ListRow title='Catagorie title' detail={
           <Checkbox
@@ -46,7 +85,44 @@ export default class TenderCatagories extends NavigationPage {
             checked={this.state.checkedMD}
             onChange={value => this.setState({checkedMD: value})}
             />
-        } bottomSeparator='full' />
+        } bottomSeparator='full' >
+        <ListRow style={{ paddingLeft:55}} title='Catagorie title' detail={
+          <Checkbox
+            title=''
+            size='lg'
+            checked={this.state.checkedSM}
+            onChange={value => this.setState({checkedSM: value})}
+            />
+        } bottomSeparator='full'
+          />
+          <ListRow style={{ paddingLeft:55}} title='Catagorie title' detail={
+          <Checkbox
+            title=''
+            size='lg'
+            checked={this.state.checkedSM}
+            onChange={value => this.setState({checkedSM: value})}
+            />
+        } bottomSeparator='full'
+          />
+          <ListRow style={{ paddingLeft:55}} title='Catagorie title' detail={
+          <Checkbox
+            title=''
+            size='lg'
+            checked={this.state.checkedSM}
+            onChange={value => this.setState({checkedSM: value})}
+            />
+        } bottomSeparator='full'
+          />
+          <ListRow style={{ paddingLeft:55}} title='Catagorie title' detail={
+          <Checkbox
+            title=''
+            size='lg'
+            checked={this.state.checkedSM}
+            onChange={value => this.setState({checkedSM: value})}
+            />
+        } bottomSeparator='full'
+          />
+        </ListRow>
 
          <ListRow title='Catagorie title' detail={
           <Checkbox
@@ -55,9 +131,9 @@ export default class TenderCatagories extends NavigationPage {
             checked={this.state.checkedLG}
             onChange={value => this.setState({checkedLG: value})}
             />
-        } bottomSeparator='full' />
+        } bottomSeparator='full' >
 
-          <ListRow title='Catagorie title' detail={
+          <ListRow style={{ paddingLeft:55}} title='Catagorie title' detail={
           <Checkbox
             title=''
             size='lg'
@@ -66,7 +142,7 @@ export default class TenderCatagories extends NavigationPage {
             />
         } bottomSeparator='full' />
 
-          <ListRow title='Catagorie title' detail={
+          <ListRow style={{ paddingLeft:55}} title='Catagorie title' detail={
           <Checkbox
             title=''
             size='lg'
@@ -75,7 +151,7 @@ export default class TenderCatagories extends NavigationPage {
             />
         } bottomSeparator='full' />
 
-          <ListRow title='Catagorie title' detail={
+          <ListRow style={{ paddingLeft:55}} title='Catagorie title' detail={
           <Checkbox
             title=''
             size='lg'
@@ -83,6 +159,7 @@ export default class TenderCatagories extends NavigationPage {
             onChange={value => this.setState({checkedLG4: value})}
             />
         } bottomSeparator='full' />
+
 
         <View style={{height: 20}} />
         <ListRow title='Empty title' detail={
